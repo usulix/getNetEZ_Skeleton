@@ -12,7 +12,7 @@ Once that was created,
     2. installed the vendor modules I wanted in everything
     3. committed and pushed to github
 
-Look for my upcoming series of video tutorials on this and more at getnetez.com
+Look for my upcoming series of video tutorials on this and more at http://getnetez.com
 
 Enjoy
 
