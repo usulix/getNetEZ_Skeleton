@@ -114,5 +114,355 @@
             "framework",
             "zf2"
         ]
+    },
+    {
+        "name": "zendframework/zend-developer-tools",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/ZendDeveloperTools.git",
+            "reference": "b577e10f92cb449cf70cfa1b6d069ee8acbe7b21"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/b577e10f92cb449cf70cfa1b6d069ee8acbe7b21",
+            "reference": "b577e10f92cb449cf70cfa1b6d069ee8acbe7b21",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "zendframework/zend-debug": "2.*",
+            "zendframework/zend-eventmanager": "2.*",
+            "zendframework/zend-mvc": "2.*",
+            "zendframework/zend-servicemanager": "2.*",
+            "zendframework/zend-stdlib": "2.*",
+            "zendframework/zend-version": "2.*"
+        },
+        "suggest": {
+            "bjyoungblood/bjy-profiler": "Version: dev-master, allows the usage of the (Zend) Db collector.",
+            "ocramius/ocra-service-manager": "OcraServiceManager can help you track dependencies within your application."
+        },
+        "time": "2014-02-20 14:58:50",
+        "type": "zf-module",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "ZendDeveloperTools": "src/"
+            },
+            "classmap": [
+                "./Module.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Evan Coury",
+                "email": "me@evancoury.com",
+                "homepage": "http://blog.evan.pro/"
+            },
+            {
+                "name": "Eric Boh",
+                "email": "cossish@gmail.com"
+            }
+        ],
+        "description": "Module for developer and debug tools for working with the ZF2 MVC layer.",
+        "homepage": "https://github.com/zendframework/ZendDeveloperTools",
+        "keywords": [
+            "debug",
+            "developer",
+            "module",
+            "zf2"
+        ]
+    },
+    {
+        "name": "bjyoungblood/bjy-profiler",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bjyoungblood/BjyProfiler.git",
+            "reference": "1ad040a59791bf28eafe4d27d485877d925db43e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bjyoungblood/BjyProfiler/zipball/1ad040a59791bf28eafe4d27d485877d925db43e",
+            "reference": "1ad040a59791bf28eafe4d27d485877d925db43e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3",
+            "zendframework/zendframework": ">=2.1.0"
+        },
+        "time": "2013-07-25 02:55:43",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "BjyProfiler": "src/"
+            },
+            "classmap": [
+                "./Module.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Ben Youngblood",
+                "email": "bx.youngblood@gmail.com",
+                "homepage": "http://bjyoungblood.com/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Database profiler for Zend\\Db (also plugin for ZendDeveloperTools)",
+        "homepage": "https://github.com/bjyoungblood/BjyProfiler",
+        "keywords": [
+            "db",
+            "profiler",
+            "zdt",
+            "zf2"
+        ]
+    },
+    {
+        "name": "zendframework/zftool",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/ZFTool.git",
+            "reference": "d73bf6f0ae6ce9b92acc72ecc8f336e2352f3ae0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/ZFTool/zipball/d73bf6f0ae6ce9b92acc72ecc8f336e2352f3ae0",
+            "reference": "d73bf6f0ae6ce9b92acc72ecc8f336e2352f3ae0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "zendframework/zend-code": ">=2.2.2",
+            "zendframework/zend-config": ">=2.2.2",
+            "zendframework/zend-console": ">=2.2.2",
+            "zendframework/zend-file": ">=2.2.2",
+            "zendframework/zend-form": ">=2.2.2",
+            "zendframework/zend-loader": ">=2.2.2",
+            "zendframework/zend-modulemanager": ">=2.2.2",
+            "zendframework/zend-mvc": ">=2.2.2",
+            "zendframework/zend-serializer": ">=2.2.2",
+            "zendframework/zend-servicemanager": ">=2.2.2",
+            "zendframework/zend-stdlib": ">=2.2.2",
+            "zendframework/zend-text": ">=2.2.2",
+            "zendframework/zend-version": ">=2.2.2",
+            "zendframework/zend-view": ">=2.2.2"
+        },
+        "time": "2014-01-02 17:29:50",
+        "bin": [
+            "zf.php"
+        ],
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "ZFTool\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Utility module for Zend Framework 2 applications.",
+        "homepage": "http://framework.zend.com/",
+        "keywords": [
+            "tool",
+            "zf2"
+        ]
+    },
+    {
+        "name": "symfony/process",
+        "version": "v2.4.2",
+        "version_normalized": "2.4.2.0",
+        "target-dir": "Symfony/Component/Process",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Process.git",
+            "reference": "c175448bac997556f8ab972908a4e14c7291fb03"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Process/zipball/c175448bac997556f8ab972908a4e14c7291fb03",
+            "reference": "c175448bac997556f8ab972908a4e14c7291fb03",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2014-02-11 13:52:09",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Process\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "kriswallsmith/assetic",
+        "version": "v1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kriswallsmith/assetic.git",
+            "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/735cffd3982c6e8cdebe292d5db39d077f65890f",
+            "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1",
+            "symfony/process": "~2.1"
+        },
+        "require-dev": {
+            "cssmin/cssmin": "*",
+            "joliclic/javascript-packer": "*",
+            "kamicane/packager": "*",
+            "leafo/lessphp": "*",
+            "leafo/scssphp": "*",
+            "leafo/scssphp-compass": "*",
+            "mrclay/minify": "*",
+            "phpunit/phpunit": "~3.7",
+            "ptachoire/cssembed": "*",
+            "twig/twig": "~1.6"
+        },
+        "suggest": {
+            "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+            "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+            "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+            "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+            "twig/twig": "Assetic provides the integration with the Twig templating engine"
+        },
+        "time": "2013-07-19 00:03:27",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Assetic": "src/"
+            },
+            "files": [
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kris Wallsmith",
+                "email": "kris.wallsmith@gmail.com",
+                "homepage": "http://kriswallsmith.net/"
+            }
+        ],
+        "description": "Asset Management for PHP",
+        "homepage": "https://github.com/kriswallsmith/assetic",
+        "keywords": [
+            "assets",
+            "compression",
+            "minification"
+        ]
+    },
+    {
+        "name": "widmogrod/zf2-assetic-module",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/widmogrod/zf2-assetic-module.git",
+            "reference": "0bf0cfb020c62eba6525103532102eb1d0059495"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/widmogrod/zf2-assetic-module/zipball/0bf0cfb020c62eba6525103532102eb1d0059495",
+            "reference": "0bf0cfb020c62eba6525103532102eb1d0059495",
+            "shasum": ""
+        },
+        "require": {
+            "kriswallsmith/assetic": "1.1.*",
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*",
+            "zendframework/zendframework": "2.*"
+        },
+        "suggest": {
+            "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+            "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler"
+        },
+        "time": "2014-02-19 09:48:14",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "AsseticBundle": "src"
+            },
+            "classmap": [
+                "Module.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Gabriel Habryn",
+                "email": "widmogrod@gmail.com",
+                "homepage": "https://github.com/widmogrod/zf2-assetic-module",
+                "role": "Developer"
+            }
+        ],
+        "description": "Zend Framework 2 module that provides complete integration of Assetic library",
+        "homepage": "https://github.com/widmogrod/zf2-assetic-module",
+        "keywords": [
+            "JS",
+            "assetic",
+            "assets",
+            "css",
+            "less",
+            "resources"
+        ]
     }
 ]

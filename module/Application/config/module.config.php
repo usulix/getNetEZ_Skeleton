@@ -99,4 +99,55 @@ return array(
             ),
         ),
     ),
+    'assetic_configuration' => array(
+        'debug' => true,
+        'buildOnRequest' => true,
+        'web_path'  =>  __DIR__.'/../../../public/assets',
+        'base_path' =>  'assets',
+
+        'routes' => array(
+            'home' => array(
+                '@base_js',
+                '@base_css',
+            ),
+        ),
+
+        'modules' => array(
+            'application' => array(
+                'root_path' => __DIR__ . '/../assets',
+                'collections' => array(
+                    'base_css' => array(
+                        'assets' => array(
+                            'css/bootstrap-responsive.min.css',
+                            'css/style.css',
+                            'css/bootstrap.min.css'
+                        ),
+                        'filters' => array(
+                            'CssRewriteFilter' => array(
+                                'name' => 'Assetic\Filter\CssRewriteFilter'
+                            )
+                        ),
+                    ),
+
+                    'base_js' => array(
+                        'assets' => array(
+                            'js/html5.js',
+                            'js/jquery.min.js',
+                            'js/bootstrap.min.js',
+                        )
+                    ),
+
+                    'base_images' => array(
+                        'assets' => array(
+                            'images/*.png',
+                            'images/*.ico',
+                        ),
+                        'options' => array(
+                            'move_raw' => true,
+                        )
+                    ),
+                ),
+            ),
+        ),
+    ),
 );
