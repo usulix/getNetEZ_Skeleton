@@ -35,3 +35,15 @@ Virtual Host
 ------------
 Afterwards, set up a virtual host to point to the public/ directory of the
 project and you should be ready to go!
+
+Bjy-Profiler
+------------
+
+The skeleton contains https://github.com/bjyoungblood/BjyProfiler and it will need to be configured or it will error out.
+
+Create a file  /config/autoload/bjyprofiler.local.php and add the configuration contents as detailed at https://github.com/bjyoungblood/BjyProfiler under Configuration and use.
+
+ZendDeveloperTools
+------------
+
+The skeleton project also includes https://github.com/zendframework/ZendDeveloperTools which does not require configuration. Without configuration, it will have no visual effect in your project... see https://github.com/zendframework/ZendDeveloperTools unders Installation step 3 for details on how to copy the configuration file from ./vendor/zendframework/zend-developer-tools/config/zenddevelopertools.local.php.dist to ./config/autoload/zenddevelopertools.local.php.
